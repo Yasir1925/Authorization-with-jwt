@@ -32,7 +32,7 @@ export default function Signup() {
 
         try {
             const response = await axios.post(
-                "http://localhost:5001/signup",
+                "https://authorization-backend-jwt.vercel.app/signup",
                 formData
             );
             toast.success(response.data.message || "Signup successful! You can now log in.")

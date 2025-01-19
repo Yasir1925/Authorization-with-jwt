@@ -11,7 +11,7 @@ const Logout = () => {
             const token = localStorage.getItem("token");
 
             try {
-                await axios.get("http://localhost:5001/logout", {
+                await axios.get("https://authorization-backend-jwt.vercel.app/logout", {
                     headers: { Authorization: `Bearer ${token}` },
                     withCredentials: true,
                 });

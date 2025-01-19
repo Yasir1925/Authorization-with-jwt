@@ -16,7 +16,7 @@ function Dashboard() {
                 return;
             }
 
-            const res = await axios.get("http://localhost:5001/validuser", {
+            const res = await axios.get("https://authorization-backend-jwt.vercel.app/validuser", {
                 headers: { Authorization: `Bearer ${token}` },
                 withCredentials: true,
             });
